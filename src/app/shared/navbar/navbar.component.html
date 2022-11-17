@@ -1,0 +1,14 @@
+<div class="navbar_wrapper py-5">
+    <div class="flex justify-between">
+        <div class="logo">
+            <img class="" src="assets/images/logo.png" alt="Revent Logo" srcset="">
+        </div>
+        <div class="nav_links hidden md:block">
+            <ul class="flex flex-row gap-8">
+                <li class="font-[600]" *ngFor="let nav of navlink;">
+                    <a [href]="nav.route">{{nav.name}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

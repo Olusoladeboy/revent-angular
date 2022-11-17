@@ -1,0 +1,42 @@
+<div class="portfolio-wrapper">
+    <app-header-title title="Portfolio"></app-header-title>
+    <div class="mt-10">
+        <tabs>
+            <tab tabTitle="All">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div *ngFor="let image of images">
+                        <img [src]="image.url" [alt]="image.alt">
+                    </div>
+                </div>
+            </tab>
+            <tab tabTitle="Website">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div *ngFor="let image of images | slice:2">
+                        <img [src]="image.url" [alt]="image.alt">
+                    </div>
+                </div>
+            </tab>
+            <tab tabTitle="MobileApp">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div *ngFor="let image of images | slice:1">
+                        <img [src]="image.url" [alt]="image.alt">
+                    </div>
+                </div>
+            </tab>
+            <tab tabTitle="CSS">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div *ngFor="let image of images | slice:2">
+                        <img [src]="image.url" [alt]="image.alt">
+                    </div>
+                </div>
+            </tab>
+            <tab tabTitle="Github">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div *ngFor="let image of images | slice:1">
+                        <img [src]="image.url" [alt]="image.alt">
+                    </div>
+                </div>
+            </tab>
+        </tabs>
+    </div>
+</div>

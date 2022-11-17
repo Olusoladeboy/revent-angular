@@ -1,0 +1,30 @@
+:host ::ng-deep {
+    tabs {
+        min-height: unset !important;
+    }
+
+    .tabs__panel {
+        background-color: inherit !important;
+        width           : 100%;
+        box-shadow      : unset !important;
+        border-radius   : unset !important;
+        padding         : 30px 15px;
+    }
+
+    .tabs__tab-bar {
+        border: unset !important;
+
+        .tabs__tab.active {
+            background-color: #fff !important;
+            color           : #000;
+            border          : 5px solid #fff !important;
+        }
+
+        .tabs__tab {
+            background-color: inherit !important;
+            border          : unset !important;
+            margin          : 0px 10px;
+            border-radius   : 5px;
+        }
+    }
+}
